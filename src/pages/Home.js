@@ -1,7 +1,9 @@
 import React from "react";
 
 const Home = () => {
-  return <h2>Home</h2>;
+  return (
+    <p style={{ textAlign: "center" }}>Select one of the menu items above</p>
+  );
 };
 
 export default Home;

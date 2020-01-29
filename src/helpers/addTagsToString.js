@@ -35,6 +35,5 @@ export const addTagsToString = content => {
   });
 
   // Join character array to new string with html tags included
-  const textWithTagsApplied = stringAsChars.join("");
-  return textWithTagsApplied;
+  return stringAsChars.join("");
 };

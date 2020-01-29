@@ -1,17 +1,25 @@
-import React from "react";
+// import React from "react";
 import { addTagsToString } from "../helpers/addTagsToString";
+/** @jsx jsx */
+import { jsx } from "@emotion/core";
+
+const textBlockStyle = {
+  p: {
+    lineHeight: `1.6`
+  }
+};
 
 const TextBlock = ({ content }) => {
   if (content.intentions.length) {
     return (
-      <div>
+      <div css={textBlockStyle}>
         <p dangerouslySetInnerHTML={{ __html: addTagsToString(content) }} />
       </div>
     );
   }
 
   return (
-    <div>
+    <div css={textBlockStyle}>
       <p>{content.text}</p>
     </div>
   );

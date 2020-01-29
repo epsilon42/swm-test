@@ -1,5 +1,6 @@
 import React from "react";
 
+import PostHeader from "../components/PostHeader";
 import TextBlock from "../components/TextBlock";
 import Image from "../components/Image";
 import PullQuote from "../components/PullQuote";
@@ -10,7 +11,12 @@ import { example2 } from "../data/example2";
 const Test2 = () => {
   return (
     <div>
-      <h2>Test2</h2>
+      <PostHeader
+        headline={example2.headline}
+        source={example2.source}
+        date={example2.publicationDate}
+      />
+
       {example2.blocks.map((block, index) => {
         const BlockTypes = {
           text: <TextBlock key={index} content={block} />,
