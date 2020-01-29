@@ -32,11 +32,12 @@ const pullQuoteStyle = {
       position: `absolute`,
       content: `open-quote`,
       top: `.25rem`,
-      left: `.25rem`,
-      fontSize: `3rem`,
+      left: `.5rem`,
+      fontSize: `4rem`,
       color: `black`,
       zIndex: -1,
-      opacity: 0.1
+      opacity: 0.1,
+      fontFamily: `"Oswald", sans-serif`
     }
   },
   [mq.xsmall]: {
